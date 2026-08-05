@@ -1,0 +1,33 @@
+generated: '2026-08-05'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.super.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 16 22:48:48 2026 GMT
+  hsts: true
+  hsts_header: max-age=2592000; includeSubDomains; preload
+  hsts_max_age: 2592000
+  note: >-
+    The automated HTTP probe recorded null because every HTML path on www.super.com answers a
+    403 Cloudflare bot challenge; the header was read directly from a 200 response
+    (https://www.super.com/robots.txt) on 2026-08-05.
+- host: api.snaptravel.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  6 18:16:09 2026 GMT
+  hsts: false
+domains:
+- domain: super.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: snaptravel.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
