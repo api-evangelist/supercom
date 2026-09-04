@@ -10,6 +10,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/supercom.png
 name: Super.com
 description: 'Super.com (formerly SnapTravel and Snapcommerce) is a consumer savings company founded
